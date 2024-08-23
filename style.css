@@ -81,22 +81,29 @@ form {
 }
 .main-form p label{
     text-transform: uppercase;
+    opacity: 0.9;
     font-size: 0.8rem;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 .main-form input {
-    padding: 7px 5px;
+    padding: 7px 10px;
     border: none;
     outline: none;
     border-radius: 5px;
     border: 1px solid #e5e7eb;
+    font-size: 1.1rem;
 }
 .main-form input:focus {
     border-color: #3762dc;
     box-shadow: 1px 1px 2px 0 #3762dc;
 }
-.main-form input:invalid {
+.password.invalid, .confirmation.invalid {
     border-color: red;
+}
+.main-form .error {
+    color: red;
+    margin-top: 10px;
 }
 
 .submits {

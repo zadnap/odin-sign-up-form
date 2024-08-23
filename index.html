@@ -24,29 +24,30 @@
             <fieldset>
                 <p>
                     <label for="firstname">First name</label>
-                    <input type="text" id="firstname">
+                    <input required type="text" id="firstname">
                 </p>
                 <p>
                     <label for="lastname">Last name</label>
-                    <input type="text" id="lastname">
+                    <input required type="text" id="lastname">
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input required type="email" id="email">
                 </p>
                 <p>
                     <label for="phone-number">Phone number</label>
-                    <input type="tel" id="phone-number">
+                    <input required type="tel" id="phone-number">
                 </p>
                 <p>
                     <label for="password">Password</label>
-                    <input type="password" id="password">
+                    <input required type="password" id="password" class="password">
                 </p>
                 <p>
                     <label for="confirmation">Confirm password</label>
-                    <input type="password" id="confirmation">
+                    <input required type="password" id="confirmation" class="confirmation">
                 </p>
             </fieldset>
+            <p class="error"></p>
         </section>
         <section class="submits">
             <button type="submit">Create Account</button>
