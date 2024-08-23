@@ -14,6 +14,7 @@
 html {
     height: 100vh;
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -22,7 +23,6 @@ body {
 }
 
 .hero {
-    height: 100%;
     background-image: url(./assets/images/tree.jpg);
     background-size: cover;
     flex: 1;
@@ -46,4 +46,77 @@ body {
 
 form {
     flex: 2;
+    background-color: #f9fafb;
+    overflow-y: auto;
+}
+.intro {
+    padding: 80px 150px 30px 30px;
+}
+.intro p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.main-form {
+    background-color: white;
+    padding: 20px 150px 20px 30px;
+    color: #1f2937;
+    box-shadow: 0 2px 4px 0 #e1e2e3;
+}
+.main-form h3 {
+    margin-bottom: 20px;
+}
+.main-form fieldset {
+    border: none;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.main-form p {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: calc(50% - 30px);
+}
+.main-form p label{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.main-form input {
+    padding: 7px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #e5e7eb;
+}
+.main-form input:focus {
+    border-color: #3762dc;
+    box-shadow: 1px 1px 2px 0 #3762dc;
+}
+.main-form input:invalid {
+    border-color: red;
+}
+
+.submits {
+    padding: 30px 150px 80px 30px;
+}
+
+.submits button {
+    cursor: pointer;
+    padding: 10px 40px;
+    color: white;
+    background-color: #596d48;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.submits a {
+    color: #596d48;
+    font-weight: bold;
+    text-decoration: none;
 }
