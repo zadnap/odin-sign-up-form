@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(./assets/fonts/Norse-Bold.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+.hero {
+    height: 100%;
+    background-image: url(./assets/images/tree.jpg);
+    background-size: cover;
+    flex: 1;
+}
+.hero .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 20px;
+    margin-top: 150px;
+}
+.hero .logo img {
+    height: 90px;
+}
+.hero .logo h1 {
+    color: white;
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 5rem;
+}
+
+form {
+    flex: 2;
+}
